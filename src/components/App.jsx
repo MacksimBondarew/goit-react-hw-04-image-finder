@@ -34,6 +34,7 @@ const App = () => {
         if (query !== '' && page > 0) {
             fetchStart();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [query, page]);
 
     const queryImages = request => {
