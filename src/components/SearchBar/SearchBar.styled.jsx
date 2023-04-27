@@ -30,3 +30,29 @@ export const SearchButton = styled.button`
         margin-right: 10px;
     }
 `;
+
+export const FormContainer = styled.form`
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+`;
+export const SearchField = styled.input`
+    flex: 1;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+
+    &::placeholder {
+        color: #a6a6a6;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3);
+    }
+`;
